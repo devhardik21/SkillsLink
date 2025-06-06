@@ -46,7 +46,7 @@ const UserSchema = new Schema(
         },
         role: {
             type : [String],
-            enum: ['client', 'worker'],
+            enum: ['client', 'worker','verified','popular','People Favourite'],
             required: true
         },
 

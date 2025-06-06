@@ -28,13 +28,13 @@ const AdditionalDetailsSchema = new Schema(
         servicesOffered: [
           {
             category:  {
-                type : String,
-                required : true
+               type : Schema.Types.ObjectId,
+               ref : "Categories"
               },      
             subcategory:  {
-                type : String,
-                required : true
-              },    
+              type : Schema.Types.ObjectId,
+              ref : "SubCategories"
+             }, 
             experience:  {
                 type : String,
                 required : true
